@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index_15</title>
+</head>
+
+<body>
+  <script>
+    function myFunction() {
+      let name = window.prompt("Введите сюда своё имя", 'Введите имя');
+      alert("Ваше имя " + name + ". Очень рады знакомству с Вами!!! ");
+
+      let years = window.prompt("Сколько Вам лет, если не секрет", '35 лет');
+      alert("Через десять лет Вам исполнится " + (parseInt (years) + 10) + " лет!");
+
+      let again = confirm("Начать заново?");
+      if (again == true) {
+        myFunction();
+      }
+    }
+    myFunction();
+
+  </script>
+</body>
+
+</html>
